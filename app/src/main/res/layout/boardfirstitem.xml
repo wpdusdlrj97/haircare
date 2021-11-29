@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boardfirst_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <LinearLayout
+            android:layout_weight="90"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:weightSum="100"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/doctor_img"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:scaleType="centerCrop"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/image_round"
+                android:src="@drawable/ic_launcher_background"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/doctor_name"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="김철수 전문의"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:fontFamily="@font/notosans_medium"
+                 />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="230"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/boardfirst_type"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="모발"
+                android:fontFamily="@font/notosans_bold"
+                android:textSize="10dp"
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/boardfirst_title"
+                    android:layout_weight="9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="모발 이식 후 해야하는 관리 팁 모발 이식 후 해야하는 관리 팁"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/notosans_medium">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/expand_right">
+                    </ImageView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/boardfirst_tag"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="#두피 #탈모 #전문의 #모발이식"
+                    android:fontFamily="@font/notosans_medium"
+                    android:textSize="10dp"
+                    android:textColor="#6893E6"
+                    >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/boardfirst_date"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:text="게시일  2021.08.07"
+                    android:fontFamily="@font/notosans_medium"
+                    android:textAlignment="textEnd"
+                    android:textSize="10dp"
+                    >
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd">
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

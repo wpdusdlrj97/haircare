@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="320"
+            >
+
+            <LinearLayout
+                android:layout_weight="25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="270"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/suscreen_back_button"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/back_button">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="회원가입"
+                        android:textSize="16dp"
+                        android:textColor="#282828"
+                        android:fontFamily="@font/notosans_bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="인공지능을 활용한 \n두피·모발 분석을 받아보세요!"
+                        android:textColor="#282828"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/notosans_bold">
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="아이디"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ED5E5E"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_id_edittext"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="아이디를 입력해주세요"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="비밀번호"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ED5E5E"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_pw_edittext"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="비밀번호를 입력해주세요 "
+                        android:inputType="textPassword"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="비밀번호 확인"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ED5E5E"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_pwcheck_edittext"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="비밀번호를 재입력해주세요"
+                        android:inputType="textPassword"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="닉네임"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="#ED5E5E"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_nickname_edittext"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="닉네임을 입력해주세요 (4~6자리)"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/suscreen_checkbox1"
+                        android:layout_margin="7dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_box_on">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="서비스 이용약관 (필수) "
+                        android:textSize="12dp"
+                        android:fontFamily="@font/notosans_medium">
+                    </TextView>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전문보기 "
+                        android:textColor="#7A7d81"
+                        android:textSize="12dp"
+                        android:textAlignment="textEnd"
+                        android:fontFamily="@font/notosans_bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/suscreen_checkbox2"
+                        android:layout_margin="7dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_box_on">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="개인정보 활용 약관 (필수) "
+                        android:textSize="12dp"
+                        android:fontFamily="@font/notosans_medium">
+                    </TextView>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="전문보기 "
+                        android:textColor="#7A7d81"
+                        android:textSize="12dp"
+                        android:textAlignment="textEnd"
+                        android:fontFamily="@font/notosans_bold">
+
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    >
+
+                    <ImageView
+                        android:id="@+id/suscreen_checkbox3"
+                        android:layout_margin="7dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/check_box_off">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="마케팅 수신 동의 (선택) "
+                        android:textSize="12dp"
+                        android:fontFamily="@font/notosans_medium">
+                    </TextView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="모든 멤버십 경험을 제공하기 위하여, 개인정보 처리방침에 따라 고객 개인정보를 처리합니다"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/notosans_medium">
+                </TextView>
+
+
+                <Button
+                    android:id="@+id/suscreen_signup_button"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="가입하기"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/notosans_bold"
+                    android:background="#6893E6"
+                    >
+                </Button>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="회원가입 페이지"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/signupscreen_signup_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="회원가입 완료">-->
+<!--    </Button>-->
+
+</LinearLayout>

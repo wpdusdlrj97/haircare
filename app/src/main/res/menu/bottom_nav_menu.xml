@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"
+        android:fontFamily="@font/notosans_medium" />
+
+    <item
+        android:id="@+id/navigation_analyze"
+        android:icon="@drawable/ic_analyze_black_24dp"
+        android:title="@string/title_analyze"
+        android:fontFamily="@font/notosans_medium" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="@string/title_dashboard"
+        android:fontFamily="@font/notosans_medium"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_notifications"
+        android:fontFamily="@font/notosans_medium"/>
+
+</menu>

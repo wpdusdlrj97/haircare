@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boardsecond_layout"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/boardsecond_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_round"
+                android:src="@drawable/profile">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="120"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            
+            <TextView
+                android:id="@+id/boardsecond_nickname"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="홍길동"
+                android:textStyle="bold"
+                android:textSize="12dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/boardsecond_date"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="2021.11.21"
+                android:textSize="12dp">
+
+            </TextView>
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="200"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="end"
+            >
+
+
+            <TextView
+                android:id="@+id/boardsecond_status"
+                android:padding="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="답변 완료"
+                android:textColor="#6893E6"
+                android:textSize="12dp"
+                android:fontFamily="@font/notosans_bold">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="320">
+
+        <TextView
+            android:id="@+id/boardsecond_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?"
+            android:textSize="11dp"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:fontFamily="@font/notosans_medium">
+
+        </TextView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="320">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/boardsecond_first_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:background="#fafafa">
+        </ImageView>
+
+<!--        <ImageView-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:id="@+id/boardsecond_second_image"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:background="#fafafa">-->
+
+<!--        </ImageView>-->
+
+<!--        <ImageView-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:id="@+id/boardsecond_third_image"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:background="#fafafa">-->
+
+<!--        </ImageView>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ddd">
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
