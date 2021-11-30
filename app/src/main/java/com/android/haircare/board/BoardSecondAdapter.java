@@ -48,6 +48,8 @@ public class BoardSecondAdapter extends RecyclerView.Adapter<BoardSecondAdapter.
         TextView boardsecond_status;
 
         ImageView boardsecond_first_image;
+        ImageView boardsecond_second_image;
+        ImageView boardsecond_third_image;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -60,6 +62,8 @@ public class BoardSecondAdapter extends RecyclerView.Adapter<BoardSecondAdapter.
             boardsecond_status=itemView.findViewById(R.id.boardsecond_status);
 
             boardsecond_first_image=itemView.findViewById(R.id.boardsecond_first_image);
+            boardsecond_second_image=itemView.findViewById(R.id.boardsecond_second_image);
+            boardsecond_third_image=itemView.findViewById(R.id.boardsecond_third_image);
 
         }
     }
@@ -99,39 +103,129 @@ public class BoardSecondAdapter extends RecyclerView.Adapter<BoardSecondAdapter.
 
 
         String board_first_image_string = boardsecond_itemList.get(position).getBoardsecond_first_image();
-        Log.d("게시물저장 스트링",board_first_image_string);
+        String board_second_image_string = boardsecond_itemList.get(position).getBoardsecond_second_image();
+        String board_third_image_string = boardsecond_itemList.get(position).getBoardsecond_third_image();
+
 
         if(board_first_image_string.equals("")){
-            holder.boardsecond_first_image.setVisibility(View.GONE);
-            Glide.with(context)
-                    .load(R.drawable.profile)
-                    .thumbnail(0.3f)
-                    .centerCrop()
-                    .into(holder.boardsecond_first_image);
+
+            if(boardsecond_itemList.get(position).getBoardsecond_no()==1001){
+                Glide.with(context)
+                        .load(R.drawable.board_content1_1)
+                        .thumbnail(0.3f)
+                        .centerCrop()
+                        .into(holder.boardsecond_first_image);
+            }else if(boardsecond_itemList.get(position).getBoardsecond_no()==1002){
+                Glide.with(context)
+                        .load(R.drawable.board_content2_1)
+                        .thumbnail(0.3f)
+                        .centerCrop()
+                        .into(holder.boardsecond_first_image);
+            }else{
+                holder.boardsecond_first_image.setVisibility(View.GONE);
+            }
+
         }else{
             byte[] encodeByte = Base64.decode(board_first_image_string, Base64.DEFAULT);// String 화 된 이미지를  base64방식으로 인코딩하여 byte배열을 만듬
             Bitmap board_first_image_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);//byte배열을 bitmapfactory 메소드를 이용하여 비트맵으로 바꿔준다.
-            holder.boardsecond_first_image.setImageBitmap(board_first_image_bitmap);
+            //holder.boardsecond_first_image.setImageBitmap(board_first_image_bitmap);
+            Glide.with(context)
+                    .asBitmap()
+                    .load(board_first_image_bitmap)
+                    .thumbnail(0.3f)
+                    .centerCrop()
+                    .into(holder.boardsecond_first_image);
         }
+
+        if(board_second_image_string.equals("")){
+
+            if(boardsecond_itemList.get(position).getBoardsecond_no()==1001){
+                Glide.with(context)
+                        .load(R.drawable.board_content1_2)
+                        .thumbnail(0.3f)
+                        .centerCrop()
+                        .into(holder.boardsecond_second_image);
+            }else if(boardsecond_itemList.get(position).getBoardsecond_no()==1002){
+                Glide.with(context)
+                        .load(R.drawable.board_content2_2)
+                        .thumbnail(0.3f)
+                        .centerCrop()
+                        .into(holder.boardsecond_second_image);
+            }else{
+                holder.boardsecond_second_image.setVisibility(View.GONE);
+            }
+
+        }else{
+            byte[] encodeByte = Base64.decode(board_second_image_string, Base64.DEFAULT);// String 화 된 이미지를  base64방식으로 인코딩하여 byte배열을 만듬
+            Bitmap board_second_image_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);//byte배열을 bitmapfactory 메소드를 이용하여 비트맵으로 바꿔준다.
+            //holder.boardsecond_second_image.setImageBitmap(board_second_image_bitmap);
+            Glide.with(context)
+                    .asBitmap()
+                    .load(board_second_image_bitmap)
+                    .thumbnail(0.3f)
+                    .centerCrop()
+                    .into(holder.boardsecond_second_image);
+        }
+
+        if(board_third_image_string.equals("")){
+
+            if(boardsecond_itemList.get(position).getBoardsecond_no()==1001){
+                Glide.with(context)
+                        .load(R.drawable.board_content1_3)
+                        .thumbnail(0.3f)
+                        .centerCrop()
+                        .into(holder.boardsecond_third_image);
+            }else{
+                holder.boardsecond_third_image.setVisibility(View.GONE);
+            }
+        }else{
+            byte[] encodeByte = Base64.decode(board_third_image_string, Base64.DEFAULT);// String 화 된 이미지를  base64방식으로 인코딩하여 byte배열을 만듬
+            Bitmap board_third_image_bitmap = BitmapFactory.decodeByteArray(encodeByte, 0, encodeByte.length);//byte배열을 bitmapfactory 메소드를 이용하여 비트맵으로 바꿔준다.
+            //holder.boardsecond_third_image.setImageBitmap(board_third_image_bitmap);
+            Glide.with(context)
+                    .asBitmap()
+                    .load(board_third_image_bitmap)
+                    .thumbnail(0.3f)
+                    .centerCrop()
+                    .into(holder.boardsecond_third_image);
+        }
+
 
 
         //onclicklistener -> 해당 레이아웃을 클릭했을 시
         holder.boardsecond_linearLayout.setOnClickListener(new View.OnClickListener() {
+
+            String board_no = String.valueOf(boardsecond_itemList.get(position).getBoardsecond_no());
+
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(),"테스트",Toast.LENGTH_SHORT).show();
-
+                //Toast.makeText(view.getContext(), board_no,Toast.LENGTH_SHORT).show();
+                //인텐트 발동
+                Intent intent = new Intent(view.getContext(), BoardSecond_DetailActivity.class);
+                //게시물 번호
+                intent.putExtra("board_no", board_no);
+                view.getContext().startActivity(intent);
             }
         });
-
     }
-
-
 
     @Override
     public int getItemCount() {
         return boardsecond_itemList.size();
     }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
+    @Override
+    public long getItemId(int position){
+        return position;
+    }
+
+
+
 
 
 }

@@ -5,6 +5,8 @@ import android.widget.TextView;
 
 public class BoardSecondData {
 
+    int boardsecond_no;
+
     int boardsecond_profile;
     String boardsecond_nickname;
     String boardsecond_date;
@@ -12,17 +14,28 @@ public class BoardSecondData {
     String boardsecond_status;
 
     String boardsecond_first_image;
-//    String boardsecond_second_image;
-//    String boardsecond_third_image;
+    String boardsecond_second_image;
+    String boardsecond_third_image;
 
 
-    public BoardSecondData(int boardsecond_profile, String boardsecond_nickname, String boardsecond_date, String boardsecond_content, String boardsecond_status, String boardsecond_first_image) {
+    public BoardSecondData(int boardsecond_no, int boardsecond_profile, String boardsecond_nickname, String boardsecond_date, String boardsecond_content, String boardsecond_status, String boardsecond_first_image, String boardsecond_second_image, String boardsecond_third_image) {
+        this.boardsecond_no = boardsecond_no;
         this.boardsecond_profile = boardsecond_profile;
         this.boardsecond_nickname = boardsecond_nickname;
         this.boardsecond_date = boardsecond_date;
         this.boardsecond_content = boardsecond_content;
         this.boardsecond_status = boardsecond_status;
         this.boardsecond_first_image = boardsecond_first_image;
+        this.boardsecond_second_image = boardsecond_second_image;
+        this.boardsecond_third_image = boardsecond_third_image;
+    }
+
+    public int getBoardsecond_no() {
+        return boardsecond_no;
+    }
+
+    public void setBoardsecond_no(int boardsecond_no) {
+        this.boardsecond_no = boardsecond_no;
     }
 
     public String getBoardsecond_first_image() {
@@ -33,21 +46,21 @@ public class BoardSecondData {
         this.boardsecond_first_image = boardsecond_first_image;
     }
 
-//    public String getBoardsecond_second_image() {
-//        return boardsecond_second_image;
-//    }
-//
-//    public void setBoardsecond_second_image(String boardsecond_second_image) {
-//        this.boardsecond_second_image = boardsecond_second_image;
-//    }
-//
-//    public String getBoardsecond_third_image() {
-//        return boardsecond_third_image;
-//    }
-//
-//    public void setBoardsecond_third_image(String boardsecond_third_image) {
-//        this.boardsecond_third_image = boardsecond_third_image;
-//    }
+    public String getBoardsecond_second_image() {
+        return boardsecond_second_image;
+    }
+
+    public void setBoardsecond_second_image(String boardsecond_second_image) {
+        this.boardsecond_second_image = boardsecond_second_image;
+    }
+
+    public String getBoardsecond_third_image() {
+        return boardsecond_third_image;
+    }
+
+    public void setBoardsecond_third_image(String boardsecond_third_image) {
+        this.boardsecond_third_image = boardsecond_third_image;
+    }
 
     public int getBoardsecond_profile() {
         return boardsecond_profile;

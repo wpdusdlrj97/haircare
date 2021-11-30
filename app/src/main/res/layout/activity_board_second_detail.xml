@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="320"
+            >
+
+            <LinearLayout
+                android:layout_weight="25"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="270"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/back_button">
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="질의·응답 상세보기"
+                        android:textSize="16dp"
+                        android:textColor="#282828"
+                        android:fontFamily="@font/notosans_bold">
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="320">
+
+                        <LinearLayout
+                            android:layout_marginRight="10dp"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/boardsecond_detail_profile"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/image_round"
+                                android:src="@drawable/profile">
+
+                            </ImageView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="120"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/boardsecond_detail_nickname"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:text="홍길동"
+                                android:textStyle="bold"
+                                android:textSize="12dp">
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/boardsecond_detail_date"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:text="2021.11.21"
+                                android:textSize="12dp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="200"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="end"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/boardsecond_detail_status"
+                                android:padding="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="답변 완료"
+                                android:textColor="#6893E6"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/notosans_bold">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="320">
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:id="@+id/boardsecond_detail_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?원형 탈모인가요?원형 탈모인가요? 원형 탈모인가요?원형 탈모
+인가요? 원형 탈모인가요?원형 탈모인가요?"
+                            android:textSize="11dp"
+                            android:fontFamily="@font/notosans_medium">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="320">
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:id="@+id/boardsecond_detail_first_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:background="#fafafa">
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:id="@+id/boardsecond_detail_second_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:background="#fafafa">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:id="@+id/boardsecond_detail_third_image"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:scaleType="centerCrop"
+                            android:background="#fafafa">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#ddd">
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/doctor_answer_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="닥터's 톡톡"
+                                android:textSize="14dp"
+                                android:fontFamily="@font/notosans_bold"
+                                android:textColor="#6893E6"
+                                >
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="320">
+
+                            <LinearLayout
+                                android:layout_weight="90"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:orientation="vertical"
+                                android:weightSum="100"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/boardseconddetail_doctor_img"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:scaleType="centerCrop"
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:background="@drawable/image_round"
+                                    android:src="@drawable/doctor1"
+                                    android:elevation="2dp"/>
+
+                                <TextView
+                                    android:id="@+id/boardseconddetail_doctor_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:gravity="center"
+                                    android:text="김철수 전문의"
+                                    android:textColor="@color/black"
+                                    android:textSize="10dp"
+                                    android:fontFamily="@font/notosans_medium"
+                                    />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="230"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:orientation="vertical"
+                                >
+
+
+                                <LinearLayout
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:id="@+id/boardseconddetail_doctor_title"
+                                        android:layout_weight="10"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:text="탈모를 부르는 나쁜 습관 6가지와 예방법 및 모발 관리 방법 설명드립니다"
+                                        android:textSize="12dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/notosans_medium">
+                                    </TextView>
+
+
+
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="10">
+
+                                    <TextView
+                                        android:id="@+id/boardseconddetail_tag"
+                                        android:layout_weight="6"
+                                        android:layout_width="0dp"
+                                        android:layout_height="30dp"
+                                        android:text="#두피 #탈모 #모발이식"
+                                        android:fontFamily="@font/notosans_medium"
+                                        android:textSize="10dp"
+                                        android:textColor="#6893E6"
+                                        >
+                                    </TextView>
+
+                                    <TextView
+                                        android:id="@+id/boardseconddetail_date"
+                                        android:layout_weight="4"
+                                        android:layout_width="0dp"
+                                        android:layout_height="30dp"
+                                        android:text="2021.11.29"
+                                        android:fontFamily="@font/notosans_medium"
+                                        android:textAlignment="textEnd"
+                                        android:textSize="10dp"
+                                        >
+                                    </TextView>
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#ddd">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#F0F0F0">
+
+                            <TextView
+                                android:id="@+id/boardseconddetail_doctor_content"
+                                android:layout_marginBottom="20dp"
+                                android:padding="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="
+올바른 모발관리는 모발손상을 최소화하고 모발과 두피를 항상 깨끗하게 유지하는 것입니다. 따라서 탈모증이 있다 하더라도 머리를 제대로 감아줘야 두피에 쌓인 노폐물이나 비듬, 과다지방 등을 제거해 탈모 속도를 늦출 수 있습니다.\n\n
+올바른 모발관리는 모발손상을 최소화하고 모발과 두피를 항상 깨끗하게 유지하는 것입니다. 따라서 탈모증이 있다 하더라도 머리를 제대로 감아줘야 두피에 쌓인 노폐물이나 비듬, 과다지방 등을 제거해 탈모 속도를 늦출 수 있습니다.\n\n
+올바른 모발관리는 모발손상을 최소화하고 모발과 두피를 항상 깨끗하게 유지하는 것입니다. 따라서 탈모증이 있다 하더라도 머리를 제대로 감아줘야 두피에 쌓인 노폐물이나 비듬, 과다지방 등을 제거해 탈모 속도를 늦출 수 있습니다.\n"
+                                android:textColor="#7A7D81"
+                                android:textSize="12dp"
+                                android:fontFamily="@font/notosans_medium">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/doctor_noanswer_layout"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="전문의 답변 대기중입니다"
+                            android:textColor="#6893E6"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/notosans_bold"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
+
