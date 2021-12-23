@@ -36,10 +36,10 @@ class LoginActivity : AppCompatActivity() {
         loginscreen_pw_edittext = findViewById(R.id.loginscreen_pw_edittext)
 
 
-        val test_sharedPreference = getSharedPreferences("test", 0)
+        val test_sharedPreference = getSharedPreferences("test@gmail.com", 0)
         val editor = test_sharedPreference.edit()
-        editor.putString("id", "test")
-        editor.putString("pw", "test")
+        editor.putString("id", "test@gmail.com")
+        editor.putString("pw", "1234")
         editor.putString("nickname", "테스터")
         editor.apply()
 
@@ -64,7 +64,7 @@ class LoginActivity : AppCompatActivity() {
 
 
             if(id == "" || pw == ""){
-                Toast.makeText(this, "아이디와 비밀번호를 입력해주세요", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "이메일과 비밀번호를 입력해주세요", Toast.LENGTH_SHORT).show()
             }
             else{
                 //Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()

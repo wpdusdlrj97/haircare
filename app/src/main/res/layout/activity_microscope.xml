@@ -23,20 +23,32 @@
 
 
         <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="20">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="#80000000">
+
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/record">
+
+            </ImageView>
+
 
             <TextView
-                android:layout_margin="20dp"
+                android:layout_weight="10"
+                android:id="@+id/ms_textview"
                 android:padding="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#80000000"
                 android:textColor="@color/white"
-                android:text="현미경 영상 송출 중입니다"
-                android:textAlignment="center"
-                android:textSize="20dp"
+                android:text="50배율 현미경 영상 송출 중..."
+                android:textSize="16dp"
                 android:fontFamily="@font/notosans_medium">
             </TextView>
 
@@ -45,7 +57,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="60">
+            android:layout_weight="80">
         </LinearLayout>
 
 
@@ -55,14 +67,16 @@
             android:layout_weight="20">
 
             <Button
+                android:padding="5dp"
                 android:id="@+id/ms_capture_button"
                 android:layout_margin="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#FF3D00"
+                android:background="@drawable/blue_round"
                 android:textColor="@color/white"
                 android:textSize="16dp"
-                android:text="현재 두피·모발 진단받기">
+                android:fontFamily="@font/notosans_medium"
+                android:text="두피·모발 진단 받기">
             </Button>
 
         </LinearLayout>

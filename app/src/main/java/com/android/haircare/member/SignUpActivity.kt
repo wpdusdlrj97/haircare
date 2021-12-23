@@ -2,12 +2,10 @@ package com.android.haircare.member
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.android.haircare.R
+import com.android.haircare.analyze.AnalyzeDetailActivity
 import com.bumptech.glide.Glide
 
 
@@ -30,6 +28,12 @@ class SignUpActivity : AppCompatActivity() {
 
     lateinit var suscreen_signup_button: Button
 
+    lateinit var term1_text: TextView
+    lateinit var term2_text: TextView
+
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
@@ -42,6 +46,23 @@ class SignUpActivity : AppCompatActivity() {
         suscreen_checkbox1 = findViewById(R.id.suscreen_checkbox1)
         suscreen_checkbox2 = findViewById(R.id.suscreen_checkbox2)
         suscreen_checkbox3 = findViewById(R.id.suscreen_checkbox3)
+
+        term1_text = findViewById(R.id.term1_text)
+        term2_text = findViewById(R.id.term2_text)
+
+
+        term1_text.setOnClickListener{
+            var intent = Intent(this, TermDetailActivity::class.java)
+            intent.putExtra("type", "1");
+            startActivity(intent)
+        }
+
+        term2_text.setOnClickListener{
+            var intent = Intent(this, TermDetailActivity::class.java)
+            intent.putExtra("type", "2");
+            startActivity(intent)
+        }
+
 
         suscreen_signup_button = findViewById(R.id.suscreen_signup_button)
 

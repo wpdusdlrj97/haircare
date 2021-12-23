@@ -16,6 +16,8 @@ import com.bumptech.glide.Glide
 
 class BoardSecond_DetailActivity : AppCompatActivity() {
 
+    private lateinit var bd2_back: ImageView
+
     private lateinit var boardsecond_detail_profile: ImageView
     private lateinit var boardsecond_detail_nickname: TextView
     private lateinit var boardsecond_detail_date: TextView
@@ -39,6 +41,8 @@ class BoardSecond_DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board_second_detail)
 
+        bd2_back = findViewById(R.id.bd2_back)
+
         boardsecond_detail_profile = findViewById(R.id.boardsecond_detail_profile)
         boardsecond_detail_nickname = findViewById(R.id.boardsecond_detail_nickname)
         boardsecond_detail_date = findViewById(R.id.boardsecond_detail_date)
@@ -57,6 +61,10 @@ class BoardSecond_DetailActivity : AppCompatActivity() {
         boardseconddetail_doctor_title = findViewById(R.id.boardseconddetail_doctor_title)
         boardseconddetail_doctor_content = findViewById(R.id.boardseconddetail_doctor_content)
 
+
+        bd2_back.setOnClickListener {
+            finish()
+        }
 
         //접근 시 recyclerview 스크롤 유지
         val rv_sharedPreference = getSharedPreferences("rv_db", 0)

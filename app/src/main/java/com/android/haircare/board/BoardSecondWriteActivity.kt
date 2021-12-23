@@ -30,6 +30,9 @@ import java.util.*
 
 class BoardSecondWriteActivity : AppCompatActivity() {
 
+
+    private lateinit var bw2_back: ImageView
+
     lateinit var bscw_edittext: EditText
     lateinit var test_imageview1: ImageView
     lateinit var test_imageview2: ImageView
@@ -50,6 +53,8 @@ class BoardSecondWriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board_second_write)
 
+        bw2_back = findViewById(R.id.bw2_back)
+
         bscw_edittext = findViewById(R.id.bscw_edittext)
         test_imageview1 = findViewById(R.id.test_imageview1)
         test_imageview2 = findViewById(R.id.test_imageview2)
@@ -57,6 +62,11 @@ class BoardSecondWriteActivity : AppCompatActivity() {
         bswc_write_button = findViewById(R.id.bswc_write_button)
 
         bswc_progressbar = findViewById(R.id.bswc_progressbar)
+
+
+        bw2_back.setOnClickListener {
+            finish()
+        }
 
 
         test_imageview1.setOnClickListener {

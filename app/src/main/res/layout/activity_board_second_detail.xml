@@ -41,6 +41,7 @@
                     >
 
                     <ImageView
+                        android:id="@+id/bd2_back"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
                         android:paddingRight="10dp"

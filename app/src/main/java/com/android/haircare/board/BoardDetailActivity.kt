@@ -11,6 +11,8 @@ import com.bumptech.glide.Glide
 
 class BoardDetailActivity : AppCompatActivity() {
 
+    private lateinit var bd1_back: ImageView
+
     private lateinit var boardfirstdetail_doctor_img: ImageView
     private lateinit var  boardfirstdetail_doctor_name: TextView
     private lateinit var  boardfirstdetail_type: TextView
@@ -18,10 +20,13 @@ class BoardDetailActivity : AppCompatActivity() {
     private lateinit var  boardfirstdetail_tag: TextView
     private lateinit var  boardfirstdetail_date: TextView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board_detail)
 
+
+        bd1_back = findViewById(R.id.bd1_back)
         boardfirstdetail_doctor_img = findViewById(R.id.boardfirstdetail_doctor_img)
         boardfirstdetail_doctor_name = findViewById(R.id.boardfirstdetail_doctor_name)
         boardfirstdetail_type = findViewById(R.id.boardfirstdetail_type)
@@ -53,6 +58,10 @@ class BoardDetailActivity : AppCompatActivity() {
         boardfirstdetail_title.text=boardfirst_title
         boardfirstdetail_tag.text=boardfirst_tag
         boardfirstdetail_date.text=boardfirst_date
+
+        bd1_back.setOnClickListener {
+            finish()
+        }
     }
 
 

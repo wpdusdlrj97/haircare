@@ -101,7 +101,7 @@
                             android:layout_marginLeft="3dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="아이디"
+                            android:text="이메일"
                             android:textColor="#7A7D81"
                             android:textSize="14dp"
                             android:fontFamily="@font/notosans_medium"
@@ -128,7 +128,7 @@
                         android:paddingBottom="18dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="아이디를 입력해주세요"
+                        android:hint="이메일을 입력해주세요"
                         android:textSize="14dp">
 
                     </EditText>
@@ -238,6 +238,8 @@
 
                 </LinearLayout>
 
+
+
                 <LinearLayout
                     android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
@@ -254,7 +256,7 @@
                             android:layout_marginLeft="3dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="닉네임"
+                            android:text="이름"
                             android:textColor="#7A7D81"
                             android:textSize="14dp"
                             android:fontFamily="@font/notosans_medium"
@@ -281,7 +283,85 @@
                         android:paddingBottom="18dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="닉네임을 입력해주세요 (4~6자리)"
+                        android:hint="이름을 입력해주세요 (4~6자리)"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="주소"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_address_edittext"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="주소를 입력해주세요"
+                        android:textSize="14dp">
+
+                    </EditText>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="핸드폰 번호"
+                            android:textColor="#7A7D81"
+                            android:textSize="14dp"
+                            android:fontFamily="@font/notosans_medium"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/suscreen_phone_edittext"
+                        android:inputType="number"
+                        android:paddingBottom="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="핸드폰 번호를 입력해주세요 (- 제외)"
                         android:textSize="14dp">
 
                     </EditText>
@@ -316,6 +396,7 @@
                         android:fontFamily="@font/notosans_medium">
                     </TextView>
                     <TextView
+                        android:id="@+id/term1_text"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -354,6 +435,7 @@
                         android:fontFamily="@font/notosans_medium">
                     </TextView>
                     <TextView
+                        android:id="@+id/term2_text"
                         android:layout_weight="1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

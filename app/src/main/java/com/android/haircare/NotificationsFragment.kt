@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -22,6 +23,14 @@ class NotificationsFragment : Fragment() {
     lateinit var mp_login_button: TextView
     lateinit var mp_nickname_textview: TextView
 
+    lateinit var mp_layout_1 : LinearLayout
+    lateinit var mp_layout_2 : LinearLayout
+    lateinit var mp_layout_3 : LinearLayout
+    lateinit var mp_layout_4 : LinearLayout
+    lateinit var mp_layout_5 : LinearLayout
+    lateinit var mp_layout_6 : LinearLayout
+
+
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -33,6 +42,15 @@ class NotificationsFragment : Fragment() {
 
         mp_login_button = root.findViewById(R.id.mp_login_button)
         mp_nickname_textview = root.findViewById(R.id.mp_nickname_textview)
+
+        mp_layout_1 = root.findViewById(R.id.mp_layout_1)
+        mp_layout_2 = root.findViewById(R.id.mp_layout_2)
+        mp_layout_3 = root.findViewById(R.id.mp_layout_3)
+        mp_layout_4 = root.findViewById(R.id.mp_layout_4)
+        mp_layout_5 = root.findViewById(R.id.mp_layout_5)
+        mp_layout_6 = root.findViewById(R.id.mp_layout_6)
+
+
 
         //로그인 정보가 있을 경우
         val profile_sharedPreference = context?.getSharedPreferences("login", Context.MODE_PRIVATE)
@@ -46,6 +64,28 @@ class NotificationsFragment : Fragment() {
             mp_login_button.text = "로그아웃"
             mp_nickname_textview.text = profile_nickname+"님"
         }
+
+
+        mp_layout_1.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+        mp_layout_2.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+        mp_layout_3.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+        mp_layout_4.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+        mp_layout_5.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+        mp_layout_6.setOnClickListener {
+            Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+        }
+
+
 
         return root
 
