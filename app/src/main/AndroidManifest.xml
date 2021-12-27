@@ -52,6 +52,9 @@
             android:name=".member.SignUpFinishActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".member.SurveyActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".member.TermDetailActivity"
             android:screenOrientation="portrait" />
     </application>

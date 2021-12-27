@@ -17,6 +17,7 @@ import com.android.haircare.R
 import com.android.haircare.analyze.AnalyzeResultActivity
 import com.android.haircare.analyze.MicroscopeActivity
 import com.android.haircare.member.LoginActivity
+import com.android.haircare.member.SurveyActivity
 
 class NotificationsFragment : Fragment() {
 
@@ -83,6 +84,8 @@ class NotificationsFragment : Fragment() {
         }
         mp_layout_6.setOnClickListener {
             Toast.makeText(context, "서비스 준비중입니다", Toast.LENGTH_SHORT).show()
+            //var intent = Intent(context, SurveyActivity::class.java)
+            //startActivity(intent)
         }
 
 
